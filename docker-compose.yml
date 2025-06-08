@@ -7,5 +7,6 @@ services:
       - "3000:8080"  # Porta 3000 pública → 8080 interna
     environment:
       - PORT=8080
+      - HOST=0.0.0.0
       - WAHA_TOKEN=changeme
       - NODE_ENV=production
