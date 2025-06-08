@@ -4,9 +4,8 @@ services:
   waha:
     image: devlikeapro/waha:latest
     ports:
-      - "3000:3000"
+      - "3000:8080"  # Porta 3000 pública → 8080 interna
     environment:
-      - PORT=3000
+      - PORT=8080
       - WAHA_TOKEN=changeme
       - NODE_ENV=production
-
